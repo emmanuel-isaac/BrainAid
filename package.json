@@ -1,0 +1,31 @@
+{
+  "name": "BrainAid",
+  "version": "1.0.0",
+  "description": "An application that helps you remember what you have planned out",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andela-eisaac/BrainAid.git"
+  },
+  "keywords": [
+    "helper",
+    "remember",
+    "brain",
+    "aid",
+    "deejecks",
+    "frank",
+    "i_emmanuel"
+  ],
+  "author": "Emmanuel, Franklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-eisaac/BrainAid/issues"
+  },
+  "homepage": "https://github.com/andela-eisaac/BrainAid",
+  "dependencies": {
+    "express": "^4.10.x"
+  }
+}
