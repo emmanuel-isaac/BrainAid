@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='appModule'>
   <head>
     <meta charset='utf-8'>
+    <title>Brain Aid</title>
+    <link rel='stylesheet' type='text/css' href='node_modules/bootstrap/dist/css/bootstrap.css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src='node_modules/angular/angular.js'></script>
+    <script type="text/javascript" src='node_modules/angular-route/angular-route.js'></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src='node_modules/jquery/dist/jquery.js'></script>
   </head>
-  <body>
-    <h1>WELCOME TO BRAIN AID</h1>
+  <body ng-controller='appController'>
+    <header>
+      <h1>WELCOME TO BRAIN AID</h1>
+      <nav>
+        <a href="#" ng-click='showForm = !showForm'>Add New</a>
+        <a href="#">Update Existing</a>
+      </nav>
+    </header>
+    <section>
+      <div id='addTask' ng-show='showForm'>
+        <form class='addForm'>
+          <label for='titleInput'>Add Task</label>
+          <input type='text' placeholder='Title' id='titleInput' ng-model='title'>
+          <input type='text' placeholder='Details' id='detailsInput' ng-model='details'>
+          <button ng-click='addNewTask()'>Add</button>
+        </form>
+      </div>
+      <div id='allTasks'>
+        <ul>
+          <li ng-repeat='pendingTask in pendingTasks'>
+            <p>{{pendingTask.title}}</p>
+            <p>{{pendingTask.details}}</p>
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+    <script type="text/javascript" src='scripts/controller.js'></script>
   </body>
 </html>

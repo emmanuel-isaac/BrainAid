@@ -1,0 +1,29 @@
+html {
+  background: tomato;
+}
+
+header {
+  background: green;
+}
+
+section {
+  width: 100%;
+  overflow: auto;
+  /*border: solid black;*/
+}
+
+/*#addTask,
+#allTasks {
+  display: inline-block;
+  /*border: black solid;
+}*/
+
+/*#addForm {
+  float: right;
+  position: relative;
+  right: 0;
+  top: 0;
+  /*position: absolute;
+  right: 0;
+  top: 0;
+}*/
